@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+  }
+  
+  .top-left, .top-right {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .top-left h2, .top-right h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  .bottom {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .team-image {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .goback-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .goback-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    margin-top: 20px; /* Adjust the margin to control space */
+  }
+  
+  .bottom {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .top {
+      flex-direction: row;
+    }
+  
+    .top-left, .top-right {
+      width: 100%;
+      margin-bottom: 40px; /* Adds space between top-left and top-right */
+    }
+  
+    .bottom {
+      margin-top: 0px;
+      padding-top: 0px; /* Adds space between the top container and the bottom container */
+    }
+    body {
+      font-size: 14px; /* Reduced base font size */
+    }
+  
+    .top-left h2, .top-right h2 {
+      font-size: 16px; /* Reduced header font size */
+    }
+  
+    form input[type="number"] {
+      font-size: 10px; /* Reduced input font size */
+      padding: 8px; /* Adjusted padding */
+    }
+  
+    form button {
+      font-size: 10px; /* Reduced button font size */
+      padding: 8px; /* Adjusted padding */
+    }
+  
+    td {
+      font-size: 14px; /* Reduced table cell font size */
+    }
+
+    .team-image {
+      width: 60px; /* Adjust the width for smaller screens */
+      height: 60px; /* Adjust the height for smaller screens */
+    }
+    .container{
+      padding: 10px;
+    }
+
+    h1{
+      font-size: 20px;
+      margin-top: 70px;
+    }
+
+    h2{
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .goback-btn {
+      position: absolute;
+      padding: 5px 10px;
+      border-radius: 3px; 
+      font-size: 14px;
+    }
+  }
